@@ -1,74 +1,79 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
-  RxDiscordLogo,
   RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
   RxLinkedinLogo,
 } from "react-icons/rx";
-
-import { FaYoutube } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
-        <div className="w-full flex flex-col items-center justify-center m-auto">
-            <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
-                
+    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px]">
+      <div className="w-full flex flex-col items-center justify-center m-auto">
+        <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
 
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Community</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Youtube</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Github</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Discord</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Social Media</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Instagram</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Twitter</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Linkedin</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">About</div>
-                   <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                     
-                        <span className="text-[15px] ml-[6px]">Become Sponsor</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                      
-                        <span className="text-[15px] ml-[6px]">Learning about me</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                  
-                        <span className="text-[15px] ml-[6px]">mifwebchain@gmail.com</span>    
-                    </p>
-                </div>
-            </div>
+          {/* Projects Section */}
+          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
+            <div className="font-bold text-[16px]">Projects</div>
 
-            <div className="mb-[20px] text-[15px] text-center">
-                &copy; WebChain Dev 2023 Inc. All rights reserved
-            </div>
+            <a href="https://text-transfer-client.vercel.app" target="_blank" rel="noopener noreferrer" className="my-[15px] text-[15px] hover:underline">
+              Token Text Transfer
+            </a>
+
+            <a href="https://github.com/yourusername/hotel-qr-dine" target="_blank" rel="noopener noreferrer" className="my-[15px] text-[15px] hover:underline">
+              QR Dine App
+            </a>
+
+            <a href="https://github.com/yourusername/esp-rfid" target="_blank" rel="noopener noreferrer" className="my-[15px] text-[15px] hover:underline">
+              RFID + ESP8266 System
+            </a>
+          </div>
+
+          {/* Tech Stack Section */}
+          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
+            <div className="font-bold text-[16px]">Tech Stack</div>
+
+            <p className="flex items-center my-[10px] text-[15px]">
+              <FaReact className="mr-2" /> React & Next.js
+            </p>
+            <p className="flex items-center my-[10px] text-[15px]">
+              <FaNodeJs className="mr-2" /> Node.js Backend
+            </p>
+            <p className="flex items-center my-[10px] text-[15px]">
+              <FaDatabase className="mr-2" /> MongoDB / Firebase
+            </p>
+            <p className="flex items-center my-[10px] text-[15px]">
+              <SiTailwindcss className="mr-2" /> Tailwind CSS
+            </p>
+          </div>
+
+          {/* About Section */}
+          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
+            <div className="font-bold text-[16px]">About</div>
+
+            <a  href="https://github.com/komalcvm"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center my-[15px] text-[15px] hover:underline">
+              <RxGithubLogo className="mr-2" /> GitHub
+            </a>
+
+            <a href="https://linkedin.com/in/komalcvm" target="_blank" rel="noopener noreferrer" className="flex items-center my-[15px] text-[15px] hover:underline">
+              <RxLinkedinLogo className="mr-2" /> LinkedIn
+            </a>
+
+            <p className="my-[10px] text-[15px]">📞 +91 7892253772</p>
+            <p className="my-[10px] text-[15px]">📧 komalchakradhar123@gmail.com</p>
+          </div>
         </div>
-    </div>
-  )
-}
 
-export default Footer
+        <div className="mb-[20px] text-[15px] text-center">
+          &copy; Fullstack Dev 2025 Inc. All rights reserved
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

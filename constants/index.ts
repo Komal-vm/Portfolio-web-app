@@ -84,6 +84,7 @@ export const Skill_data = [
     {
       name: "Discord",
       src: "/instagram.svg",
+      key:"https://github.com/Komal-vm"
     },
     {
       name: "Facebook",

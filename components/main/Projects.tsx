@@ -12,19 +12,22 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/what-is-encryption.jpg"
+          title="Modern Next.js Token-Text-Transfer-app"
+          description="Token Text Transfer lets you share text via tokens. Built with React, Tailwind, Turborepo, and deployed on Vercel."
+          
         />
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/image.png"
+          title="Scan-Dine"
+          description="
+ScanDine is a smart dining solution that lets users scan QR codes to view menus, place orders, and streamline restaurant service. Built with React, Tailwind,"
         />
         <ProjectCard
           src="/SpaceWebsite.png"
           title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description="Blast off into a sleek, space-themed experience where design meets the cosmos.
+Explore a digital galaxy built for speed, style, and stellar vibes. 🌌🚀"
         />
       </div>
     </div>
